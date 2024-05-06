@@ -19,6 +19,7 @@ async function Search(city) {
     console.log("CurrentCloud" + CurrentCloud);
     console.log("CurrentHumidity" + CurrentHumidity);
     console.log("CurrentWind" + CurrentWind);
+    
   }
   if (ForecastData &&ForecastData.forecast &&ForecastData.forecast.forecastday.length > 0) {
     const ForecastRain =ForecastData.forecast.forecastday[0].day.daily_chance_of_rain;
