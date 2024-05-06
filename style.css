@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    background-color: #004ff9;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+.cityname{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.cityname h1{
+    margin-bottom: 0px;
+    color: aliceblue;
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cityname h3{
+    color: aliceblue;
+    font-size: 25px;
+    margin-top: 0px;
+}
+.searchbox{
+    position: absolute;
+    right: 20px;
+    display: flex;
+}
+.searchbox input[type="text"]{
+    margin-top: 60px;
+    width: 250px;
+    height: 25px;
+}
