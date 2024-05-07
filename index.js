@@ -1,3 +1,4 @@
+let city;
 const key = "516f593e68484640b2b83140240405";
 const baseUrl = "http://api.weatherapi.com/v1";
 async function Search(city) {
@@ -31,4 +32,8 @@ async function Search(city) {
         console.log(LocalTIme);
     }
 }
-Search("Delhi");
+function FetchWeather(){
+  let city=document.getElementById("city").value;
+  console.log(city)
+  Search(city);
+}
