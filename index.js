@@ -22,38 +22,31 @@ async function Search(city) {
     console.log("CurrentHumidity" + CurrentHumidity);
     console.log("CurrentWind" + CurrentWind);
     console.log(CurrentWeatherCondition);
-    if(CurrentWeatherCondition==="mist")
+    if(CurrentWeatherCondition==="Clear")
       {
-        image="D:/Project/Weather/images/wind.png"
+        image="images/clear.png"
       }
     else if(CurrentWeatherCondition==="Clouds")
       {
         image="images/clouds.png"
       }
-    else if(CurrentWeatherCondition==="drizzle")
+    else if(CurrentWeatherCondition==="Drizzle")
       {
         image="images/drizzle.png"
       }
-    else if(CurrentWeatherCondition==="himidity")
+    else if(CurrentWeatherCondition==="Himidity")
       {
         image="images/humidity.png"
       }
-    else if(CurrentWeatherCondition==="mist")
+    else if(CurrentWeatherCondition==="Mist")
       {
         image="images/mist.png"
       }
-    else if(CurrentWeatherCondition==="rain")
+    else if(CurrentWeatherCondition==="Rain")
       {
         image="images/rain.png"
       }
-    else if(CurrentWeatherCondition==="snow")
-      {
-        image="images/snow.png"
-      }
-    else if(CurrentWeatherCondition==="wind")
-      {
-        image="images/wind.png"
-      }
+    
     document.getElementById("wind").innerHTML=CurrentWind;
     document.getElementById("Image").src=image;
     
