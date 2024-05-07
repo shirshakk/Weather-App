@@ -17,11 +17,14 @@ async function Search(city) {
     const CurrentHumidity = CurrentData.current.humidity;
     const CurrentWind = CurrentData.current.wind_kph;
     const CurrentWeatherCondition= CurrentData.current.condition.text;
+    document.getElementById("CurrentTemprature").innerHTML=CurrentTemprature+"\u00B0";
+    document.getElementById("type").innerHTML=CurrentWeatherCondition;
     console.log("" + CurrentTemprature);
     console.log("CurrentCloud" + CurrentCloud);
     console.log("CurrentHumidity" + CurrentHumidity);
     console.log("CurrentWind" + CurrentWind);
     console.log(CurrentWeatherCondition);
+
     if(CurrentWeatherCondition==="Clear")
       {
         image="images/clear.png"
@@ -54,8 +57,8 @@ async function Search(city) {
   if (ForecastData && ForecastData.forecast && ForecastData.forecast.forecastday.length >=0) {
     console.log("Number of forecast days:", ForecastData.forecast.forecastday.length);
     const ForecastRain = ForecastData.forecast.forecastday[0].day.daily_chance_of_rain;
-    const ForecastHighTemperature = ForecastData.forecast.forecastday[0].day.maxtemp_c;
-    const ForecastLowTemperature = ForecastData.forecast.forecastday[0].day.mintemp_c;
+    const ForecastHighTemperature = ForecastData.forecast.forecastday[0].day.maxtemp_c+"\u00B0";
+    const ForecastLowTemperature = ForecastData.forecast.forecastday[0].day.mintemp_c+"\u00B0";
     const ForecastSunrise = ForecastData.forecast.forecastday[0].astro.sunrise;
     const ForecastSunset = ForecastData.forecast.forecastday[0].astro.sunset;
     document.getElementById("highTemperature").innerHTML =ForecastHighTemperature;

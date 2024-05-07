@@ -36,8 +36,9 @@ body{
 }
 .left{
     width: 50%;
-    border: 4px solid green;
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
 .right{
     width: 50%;
@@ -79,3 +80,39 @@ body{
     height: 100px;
     margin-left: 50px;
 }
+.leftdata p{
+    font-size: 100px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    color: white;
+    font-family:'Times New Roman', Times, serif 
+}
+.leftdata h2{
+    margin-left: 25px;
+    font-size: 35px;
+    color: white;
+    font-family:'Times New Roman', Times, serif
+}
+.bottom{
+    display: flex;
+
+}
+.week {
+    width: 130px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .week:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .week p{
+    margin-left: 45px;
+  }
