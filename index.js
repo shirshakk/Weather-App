@@ -2,6 +2,7 @@ const key = "516f593e68484640b2b83140240405";
 const baseUrl = "http://api.weatherapi.com/v1";
 let image="";
 async function Search(city) {
+  document.getElementById("CityName").innerHTML=city;
   const CurrentResource = await fetch(`${baseUrl}/current.json?key=${key}&q=${city}`);
   const CurrentData = await CurrentResource.json();
 
@@ -77,9 +78,12 @@ async function Search(city) {
         console.log(LocalTIme);
     }
 }
+window.addEventListener("load", function(){
+  Search("Lucknow")
+})
 function FetchWeather(){
   let city=document.getElementById("city").value;
-  document.getElementById("CityName").innerHTML=city;
+  
   console.log(city)
   Search(city);
 }
