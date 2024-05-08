@@ -51,7 +51,7 @@ async function Search(city) {
         image="images/rain.png"
       }
     
-    document.getElementById("wind").innerHTML=CurrentWind;
+    document.getElementById("wind").innerHTML=CurrentWind +"kph";
     document.getElementById("Image").src=image;
     
   }
@@ -65,7 +65,7 @@ async function Search(city) {
     document.getElementById("highTemperature").innerHTML =ForecastHighTemperature;
     document.getElementById("lowTemperature").innerHTML =ForecastLowTemperature;
 
-    document.getElementById("rain").innerHTML = ForecastRain;
+    document.getElementById("rain").innerHTML = ForecastRain+"%";
     document.getElementById("sunset").innerHTML = ForecastSunset;
     document.getElementById("Sunrise").innerHTML = ForecastSunrise;
     console.log("Chance of rain:", ForecastRain);
